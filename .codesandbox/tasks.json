@@ -1,0 +1,78 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "pnpm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "cd examples/bare && pnpm run dev": {
+      "name": "dev preview: bare",
+      "command": "cd examples/bare && pnpm run dev",
+      "runAtStart": true
+    },
+    "cd examples/with-solid-styled && pnpm run dev": {
+      "name": "dev preview: with-solid-styled",
+      "command": "cd examples/with-solid-styled && pnpm run dev",
+      "runAtStart": true
+    },
+    "clean": {
+      "name": "clean",
+      "command": "pnpm clean",
+      "runAtStart": false
+    },
+    "clean:root": {
+      "name": "clean:root",
+      "command": "pnpm clean:root",
+      "runAtStart": false
+    },
+    "publish:release": {
+      "name": "publish:release",
+      "command": "pnpm publish:release",
+      "runAtStart": false
+    },
+    "docs:dev": {
+      "name": "docs:dev",
+      "command": "pnpm docs:dev",
+      "runAtStart": false
+    },
+    "docs:build": {
+      "name": "docs:build",
+      "command": "pnpm docs:build",
+      "runAtStart": false
+    },
+    "docs:start": {
+      "name": "docs:start",
+      "command": "pnpm docs:start",
+      "runAtStart": false
+    },
+    "clean:test": {
+      "name": "clean:test",
+      "command": "pnpm clean:test",
+      "runAtStart": false
+    },
+    "build:all": {
+      "name": "build:all",
+      "command": "pnpm build:all",
+      "runAtStart": false
+    },
+    "test:all": {
+      "name": "test:all",
+      "command": "pnpm test:all",
+      "runAtStart": false
+    },
+    "test": {
+      "name": "test",
+      "command": "pnpm test",
+      "runAtStart": false
+    },
+    "bump": {
+      "name": "bump",
+      "command": "pnpm bump",
+      "runAtStart": false
+    }
+  }
+}
